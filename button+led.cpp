@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    main.c
+  * @file    button + led
   * @author  Ac6
   * @version V1.0
   * @date    01-December-2013
@@ -50,7 +50,5 @@ int main(void) {
     	} else {
     		GPIO_WriteBit(GPIOG,GPIO_Pin_13 | GPIO_Pin_14,Bit_RESET);
     	}
-
-    //	for(;;);
     }
 }
