@@ -20,60 +20,35 @@ int main(void)
 	LCDTFT lcd = LCDTFT();
 
 	/* Set LCD foreground layer */
-	LCD_SetLayer(LCD_FOREGROUND_LAYER);
-	LCD_SetTransparency(0);
+	lcd.LCD_SetLayer(LCD_FOREGROUND_LAYER);
+	lcd.LCD_SetTransparency(0);
 
 	/* Set LCD background layer */
-	LCD_SetLayer(LCD_BACKGROUND_LAYER);
+	lcd.LCD_SetLayer(LCD_BACKGROUND_LAYER);
+	lcd.LCD_Clear(LCD_COLOR_WHITE);
 
-	/* LCD display message */
-	LCD_Clear(LCD_COLOR_WHITE);
-	//LCD_Clear2(LCD_COLOR_BLUE);
-	/*LCD_SetTextColor(LCD_COLOR_BLACK);
-	LCD_DisplayStringLine(LCD_LINE_2,(uint8_t*)"     YOU'LL    ");
-	LCD_DisplayStringLine(LCD_LINE_4,(uint8_t*)"     NEVER     ");
-	LCD_DisplayStringLine(LCD_LINE_6,(uint8_t*)"      TAKE     ");
-	LCD_DisplayStringLine(LCD_LINE_8,(uint8_t*)"       ME      ");
-	LCD_DisplayStringLine(LCD_LINE_10,(uint8_t*)"     ALIVE     ");*/
+	int j = 0;
 
 	while(1)
 	{
+		j++;
 		while(RNG_GetFlagStatus(RNG_FLAG_DRDY)== RESET);
 		int i1 = RNG_GetRandomNumber()%240;
 		while(RNG_GetFlagStatus(RNG_FLAG_DRDY)== RESET);
 		int i2 = RNG_GetRandomNumber()%360;
 		while(RNG_GetFlagStatus(RNG_FLAG_DRDY)== RESET);
-		int i3 = RNG_GetRandomNumber()%400;
+		int i3 = RNG_GetRandomNumber()%100;
 		while(RNG_GetFlagStatus(RNG_FLAG_DRDY)== RESET);
 		int i4 = RNG_GetRandomNumber()%2;
 
 		while(RNG_GetFlagStatus(RNG_FLAG_DRDY)== RESET);
-		LCD_SetTextColor(RNG_GetRandomNumber());
-		LCD_DrawLine(i1,i2,i3,i4);
+		//LCD_SetTextColor(RNG_GetRandomNumber());
+		lcd.LCD_DrawStraigtLine(i1, i2, i3, i4, RNG_GetRandomNumber());
 
 		while(RNG_GetFlagStatus(RNG_FLAG_DRDY)== RESET);
-		int i = RNG_GetRandomNumber()%100000;
+		int i = RNG_GetRandomNumber()%1000000;
 		for(;i>0;i--);
-
-		/*
-			LCD_Clear(LCD_COLOR_RED);
-			/*LCD_SetTextColor(LCD_COLOR_BLACK);
-			LCD_DisplayStringLine(LCD_LINE_2,(uint8_t*)"     YOU'LL    ");
-			LCD_DisplayStringLine(LCD_LINE_4,(uint8_t*)"     NEVER     ");
-			LCD_DisplayStringLine(LCD_LINE_6,(uint8_t*)"      TAKE     ");
-			LCD_DisplayStringLine(LCD_LINE_8,(uint8_t*)"       ME      ");
-			LCD_DisplayStringLine(LCD_LINE_10,(uint8_t*)"     ALIVE     ");*//*
-			i++;
-		}
-		else if(i==1)
-		{
-			LCD_Clear(LCD_COLOR_BLUE);
-			i++;
-		}
-		else
-		{
-			LCD_Clear(LCD_COLOR_GREEN);
-			i=0;
-		}*/
+		if(j>1000)
+			while(1);
 	}
 }
