@@ -13,6 +13,8 @@
 #include "stm32f429i_discovery_sdram.h"
 #include "LIB_LCDTFTConf.h"
 
+#include "image565.h"
+
 class LCDTFT: public LCDTFTConf
 {
 	public:
@@ -20,6 +22,9 @@ class LCDTFT: public LCDTFTConf
 		void LCD_Clear(uint16_t);
 		void LCD_DrawDot(int, int, uint16_t);
 		void LCD_DrawStraigtLine(int, int, int, uint8_t, uint16_t);
+		void LCD_DrawLine(int, int, int, int, uint16_t);
+		void LCD_DrawBMP(uint32_t);
+
 	protected:
 
 	private:
