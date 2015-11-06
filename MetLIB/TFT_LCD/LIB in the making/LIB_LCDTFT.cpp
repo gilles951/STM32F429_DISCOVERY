@@ -47,7 +47,7 @@ void LCDTFT::LCD_DrawDot(int x, int y, uint16_t Color)
 
 	DMA2D_Init(&DMA2D_InitStruct);
 	DMA2D_StartTransfer();
-	draws++;
+	draws=1;
 }
 
 void LCDTFT::LCD_DrawStraigtLine(int x, int y, int length, uint8_t Direction, uint16_t Color)
@@ -80,6 +80,7 @@ void LCDTFT::LCD_DrawStraigtLine(int x, int y, int length, uint8_t Direction, ui
 	}
 	DMA2D_Init(&DMA2D_InitStruct);
 	DMA2D_StartTransfer();
+	draws=1;
 }
 
 void LCDTFT::LCD_DrawLine(int xStart, int yStart, int xEnd, int yEnd, uint16_t Color)
@@ -138,99 +139,60 @@ void LCDTFT::LCD_DrawLine(int xStart, int yStart, int xEnd, int yEnd, uint16_t C
 	}
 }
 
-void LCDTFT::LCD_DrawBMP(uint32_t BmpAddress)
+void LCDTFT::LCD_DrawBMP(int x, int y, uint32_t BmpAddress)
 {
-	uint32_t width = 0, height = 0, bit_pixel = 0;
-	uint32_t Address;
-	uint32_t currentline = 0, linenumber = 0;
+	/*Decompile the header (SIZE, INDEX, WIDTH, HEIGHT, BIT/PIXEL)*/
+	uint32_t size = *(__IO uint32_t *) (BmpAddress);
+	uint32_t index = *(__IO uint32_t *) (BmpAddress+4);
+	uint32_t width = *(__IO uint32_t *) (BmpAddress+8);
+	uint32_t height = *(__IO uint32_t *) (BmpAddress+12);
+	uint32_t bitppixel = *(__IO uint32_t *) (BmpAddress+16);
 
-	Address = CurrentFrameBuffer;
+	/*if(x+width>LCD_PIXEL_WIDTH)
+		width = LCD_PIXEL_WIDTH - (x+width-LCD_PIXEL_WIDTH);*/
+	if(y+height > LCD_PIXEL_HEIGHT)
+		height = LCD_PIXEL_HEIGHT - (y+height-LCD_PIXEL_HEIGHT);
 
-	/* Read bitmap width */
-	width = 184;
+	int ImgSize = size - index;
 
-	/* Read bitmap height */
-	height = 184;
+	BmpAddress += index;
+	uint32_t  Xaddress = CurrentFrameBuffer + 2*(LCD_PIXEL_WIDTH*y + x);
 
-	/* Read bit/pixel */
-	bit_pixel = 16;
+	while(DMA2D_GetFlagStatus(DMA2D_FLAG_TC) == RESET && draws !=0);
 
-	if (CurrentLayer == LCD_BACKGROUND_LAYER)
-	{
-			/* reconfigure layer size in accordance with the picture */
-	    LTDC_LayerSize(LTDC_Layer1, width, height);
-	    LTDC_ReloadConfig(LTDC_VBReload);
+	DMA2D_InitTypeDef DMA2D_InitStruct;
+	DMA2D_FG_InitTypeDef   DMA2D_FG_InitStruct;
 
-	    /* Reconfigure the Layer pixel format in accordance with the picture */
-	    if ((bit_pixel/8) == 4)
-	    {
-	      LTDC_LayerPixelFormat(LTDC_Layer1, LTDC_Pixelformat_ARGB8888);
-	      LTDC_ReloadConfig(LTDC_VBReload);
-	    }
-	    else if ((bit_pixel/8) == 2)
-	    {
-	      LTDC_LayerPixelFormat(LTDC_Layer1, LTDC_Pixelformat_RGB565);
-	      LTDC_ReloadConfig(LTDC_VBReload);
-	    }
-	    else
-	    {
-	      LTDC_LayerPixelFormat(LTDC_Layer1, LTDC_Pixelformat_RGB888);
-	      LTDC_ReloadConfig(LTDC_VBReload);
-	    }
-	  }
-	  else
-	  {
-	    /* reconfigure layer size in accordance with the picture */
-	    LTDC_LayerSize(LTDC_Layer2, width, height);
-	    LTDC_ReloadConfig(LTDC_VBReload);
+	DMA2D_DeInit();
+	DMA2D_InitStruct.DMA2D_Mode = DMA2D_M2M;
+	if(bitppixel == 16)
+		DMA2D_InitStruct.DMA2D_CMode = DMA2D_RGB565;
+	DMA2D_InitStruct.DMA2D_OutputMemoryAdd = Xaddress;
 
-	    /* Reconfigure the Layer pixel format in accordance with the picture */
-	    if ((bit_pixel/8) == 4)
-	    {
-	      LTDC_LayerPixelFormat(LTDC_Layer2, LTDC_Pixelformat_ARGB8888);
-	      LTDC_ReloadConfig(LTDC_VBReload);
-	    }
-	    else if ((bit_pixel/8) == 2)
-	    {
-	      LTDC_LayerPixelFormat(LTDC_Layer2, LTDC_Pixelformat_RGB565);
-	      LTDC_ReloadConfig(LTDC_VBReload);
-	    }
-	    else
-	    {
-	      LTDC_LayerPixelFormat(LTDC_Layer2, LTDC_Pixelformat_RGB888);
-	      LTDC_ReloadConfig(LTDC_VBReload);
-	    }
-	  }
+	DMA2D_InitStruct.DMA2D_OutputOffset = LCD_PIXEL_WIDTH - width;
+	DMA2D_InitStruct.DMA2D_NumberOfLine = height;
+	DMA2D_InitStruct.DMA2D_PixelPerLine = width;
 
-	  /* compute the real size of the picture (without the header)) */
+	DMA2D_InitStruct.DMA2D_OutputGreen = 0;
+	DMA2D_InitStruct.DMA2D_OutputBlue = 0;
+	DMA2D_InitStruct.DMA2D_OutputRed = 0;
+	DMA2D_InitStruct.DMA2D_OutputAlpha = 0;
+
+	DMA2D_Init(&DMA2D_InitStruct);
+	DMA2D_FG_StructInit(&DMA2D_FG_InitStruct);
+
+	DMA2D_FG_InitStruct.DMA2D_FGCM = CM_RGB565;
+	DMA2D_FG_InitStruct.DMA2D_FGMA = BmpAddress;
+
+	DMA2D_FGConfig(&DMA2D_FG_InitStruct);
 
 
-	  /* bypass the bitmap header */
-	  BmpAddress = *_acwauw;
+	DMA2D_StartTransfer();
+	draws=1;
+}
 
-	  /* start copie image from the bottom */
-	  Address += width*(height-1)*(bit_pixel/8);
+void LCDTFT::LCD_DrawBMPLine(int x, int y, uint32_t address, int length, int bitppixel)
+{
 
-	  int index = 0;
-
-	  for(index = 0; index < (width*height*(bit_pixel/8)); index++)
-	  {
-	    *(__IO uint8_t*) (Address) = *(__IO uint8_t *)BmpAddress;
-
-	    /*jump on next byte */
-	    BmpAddress++;
-	    Address++;
-	    currentline++;
-
-	    if((currentline/(bit_pixel/8)) == width)
-	    {
-	      if(linenumber < height)
-	      {
-	        linenumber++;
-	        Address -=(2*width*(bit_pixel/8));
-	        currentline = 0;
-	      }
-	    }
-	  }
 }
 

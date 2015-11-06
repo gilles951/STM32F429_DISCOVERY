@@ -23,7 +23,8 @@ class LCDTFT: public LCDTFTConf
 		void LCD_DrawDot(int, int, uint16_t);
 		void LCD_DrawStraigtLine(int, int, int, uint8_t, uint16_t);
 		void LCD_DrawLine(int, int, int, int, uint16_t);
-		void LCD_DrawBMP(uint32_t);
+		void LCD_DrawBMP(int, int, uint32_t);
+		void LCD_DrawBMPLine(int, int, uint32_t, int, int);
 
 	protected:
 

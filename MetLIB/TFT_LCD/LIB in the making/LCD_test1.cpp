@@ -32,15 +32,39 @@ int main(void)
 
 	//lcd.LCD_DrawStraigtLine(50,49, 150, 0, LCD_COLOR_BLACK);
 
-	lcd.LCD_DrawLine(50,50,50,200,LCD_COLOR_BLUE);
+	/*lcd.LCD_DrawLine(50,50,50,200,LCD_COLOR_BLUE);
 	lcd.LCD_DrawLine(50,50,100,200,LCD_COLOR_BLUE);
 	lcd.LCD_DrawLine(50,50,200,200,LCD_COLOR_RED);
 	lcd.LCD_DrawLine(50,50,200,100,LCD_COLOR_BLACK);
-	lcd.LCD_DrawLine(50,50,200,50,LCD_COLOR_BLACK);
-	//LCD_WriteBMP(*_acwauw);
+	lcd.LCD_DrawLine(50,50,200,50,LCD_COLOR_BLACK);*/
+
+	//uint32_t * u = ;
+
+
+
+	int x = 0;
+	int left = 0;
+	int i,j,k,l;
 
 	while(1)
 	{
+		if(left == 0)
+		{
+			x++;
+			if(x>(240-182))
+				left = 1;
+		}
+		else
+		{
+			x--;
+			if(x==0)
+				left = 0;
+		}
+
+		lcd.LCD_DrawBMP(x, 50, (uint32_t)&image565);
+
+		for(i = 0; i < 100000; i++);
+
 		/*j++;
 		while(RNG_GetFlagStatus(RNG_FLAG_DRDY)== RESET);
 		int i1 = RNG_GetRandomNumber()%240;
