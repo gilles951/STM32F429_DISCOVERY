@@ -148,14 +148,74 @@ void LCDTFT::LCD_DrawBMP(int x, int y, uint32_t BmpAddress)
 	uint32_t height = *(__IO uint32_t *) (BmpAddress+12);
 	uint32_t bitppixel = *(__IO uint32_t *) (BmpAddress+16);
 
-	/*if(x+width>LCD_PIXEL_WIDTH)
-		width = LCD_PIXEL_WIDTH - (x+width-LCD_PIXEL_WIDTH);*/
 	if(y+height > LCD_PIXEL_HEIGHT)
 		height = LCD_PIXEL_HEIGHT - (y+height-LCD_PIXEL_HEIGHT);
 
 	int ImgSize = size - index;
 
 	BmpAddress += index;
+
+	if(x+width>LCD_PIXEL_WIDTH)
+	{
+		int nwidth = width - (x+width-LCD_PIXEL_WIDTH);
+		int i = 0;
+		for(i = 0; i < height; i++)
+		{
+			LCD_DrawBMPLine(x, y + i, BmpAddress, nwidth, bitppixel);
+			BmpAddress += width*(bitppixel/8);
+		}
+	}
+	else if(x<0)
+	{
+		int nwidth = width + x;
+		int i = 0;
+		BmpAddress += -x * (bitppixel/8);
+		for(i = 0; i < height; i++)
+		{
+			LCD_DrawBMPLine(0, y + i, BmpAddress, nwidth, bitppixel);
+			BmpAddress += width*(bitppixel/8);
+		}
+	}
+	else
+	{
+		uint32_t  Xaddress = CurrentFrameBuffer + 2*(LCD_PIXEL_WIDTH*y + x);
+
+		while(DMA2D_GetFlagStatus(DMA2D_FLAG_TC) == RESET && draws !=0);
+
+		DMA2D_InitTypeDef DMA2D_InitStruct;
+		DMA2D_FG_InitTypeDef   DMA2D_FG_InitStruct;
+
+		DMA2D_DeInit();
+		DMA2D_InitStruct.DMA2D_Mode = DMA2D_M2M;
+		if(bitppixel == 16)
+			DMA2D_InitStruct.DMA2D_CMode = DMA2D_RGB565;
+		DMA2D_InitStruct.DMA2D_OutputMemoryAdd = Xaddress;
+
+		DMA2D_InitStruct.DMA2D_OutputOffset = LCD_PIXEL_WIDTH - width;
+		DMA2D_InitStruct.DMA2D_NumberOfLine = height;
+		DMA2D_InitStruct.DMA2D_PixelPerLine = width;
+
+		DMA2D_InitStruct.DMA2D_OutputGreen = 0;
+		DMA2D_InitStruct.DMA2D_OutputBlue = 0;
+		DMA2D_InitStruct.DMA2D_OutputRed = 0;
+		DMA2D_InitStruct.DMA2D_OutputAlpha = 0;
+
+		DMA2D_Init(&DMA2D_InitStruct);
+		DMA2D_FG_StructInit(&DMA2D_FG_InitStruct);
+
+		DMA2D_FG_InitStruct.DMA2D_FGCM = CM_RGB565;
+		DMA2D_FG_InitStruct.DMA2D_FGMA = BmpAddress;
+
+		DMA2D_FGConfig(&DMA2D_FG_InitStruct);
+
+
+		DMA2D_StartTransfer();
+		draws=1;
+	}
+}
+
+void LCDTFT::LCD_DrawBMPLine(int x, int y, uint32_t address, int length, int bitppixel)
+{
 	uint32_t  Xaddress = CurrentFrameBuffer + 2*(LCD_PIXEL_WIDTH*y + x);
 
 	while(DMA2D_GetFlagStatus(DMA2D_FLAG_TC) == RESET && draws !=0);
@@ -169,9 +229,9 @@ void LCDTFT::LCD_DrawBMP(int x, int y, uint32_t BmpAddress)
 		DMA2D_InitStruct.DMA2D_CMode = DMA2D_RGB565;
 	DMA2D_InitStruct.DMA2D_OutputMemoryAdd = Xaddress;
 
-	DMA2D_InitStruct.DMA2D_OutputOffset = LCD_PIXEL_WIDTH - width;
-	DMA2D_InitStruct.DMA2D_NumberOfLine = height;
-	DMA2D_InitStruct.DMA2D_PixelPerLine = width;
+	DMA2D_InitStruct.DMA2D_OutputOffset = 0;
+	DMA2D_InitStruct.DMA2D_NumberOfLine = 1;
+	DMA2D_InitStruct.DMA2D_PixelPerLine = length;
 
 	DMA2D_InitStruct.DMA2D_OutputGreen = 0;
 	DMA2D_InitStruct.DMA2D_OutputBlue = 0;
@@ -182,17 +242,12 @@ void LCDTFT::LCD_DrawBMP(int x, int y, uint32_t BmpAddress)
 	DMA2D_FG_StructInit(&DMA2D_FG_InitStruct);
 
 	DMA2D_FG_InitStruct.DMA2D_FGCM = CM_RGB565;
-	DMA2D_FG_InitStruct.DMA2D_FGMA = BmpAddress;
+	DMA2D_FG_InitStruct.DMA2D_FGMA = address;
 
 	DMA2D_FGConfig(&DMA2D_FG_InitStruct);
 
 
 	DMA2D_StartTransfer();
 	draws=1;
-}
-
-void LCDTFT::LCD_DrawBMPLine(int x, int y, uint32_t address, int length, int bitppixel)
-{
-
 }
 

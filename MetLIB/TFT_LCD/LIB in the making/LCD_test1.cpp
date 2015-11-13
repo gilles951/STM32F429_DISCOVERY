@@ -51,13 +51,13 @@ int main(void)
 		if(left == 0)
 		{
 			x++;
-			if(x>(240-182))
+			if(x>(240-50))
 				left = 1;
 		}
 		else
 		{
 			x--;
-			if(x==0)
+			if(x==-100)
 				left = 0;
 		}
 
