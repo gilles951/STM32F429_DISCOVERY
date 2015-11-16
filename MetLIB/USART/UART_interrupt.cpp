@@ -1,7 +1,6 @@
 
 #include "stm32f4xx.h"
 #include "stm32f4xx_conf.h"
-#include "register_init.h"
 
 void rcc_init(void){
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE); 	// turn the clock on for register A
@@ -17,11 +16,11 @@ void GPIO_init(void){
 	GPIO_InitDef.GPIO_PuPd = GPIO_PuPd_NOPULL;					// init no pullup
 	GPIO_InitDef.GPIO_Speed = GPIO_Speed_2MHz;					// init 2 Mhz
 
-	GPIO_Init(GPIOA, &GPIO_InitDef);							//Initialize pins
+	GPIO_Init(GPIOA, &GPIO_InitDef);						//Initialize pins
 
 	 /* Connect USART pins to AF */
-	GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_USART2);
-	GPIO_PinAFConfig(GPIOA, GPIO_PinSource3, GPIO_AF_USART2);
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_USART2);		// turn tx on
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource3, GPIO_AF_USART2);		// turn rx on
 }
 
 void USART2_init(void){
@@ -36,19 +35,19 @@ void USART2_init(void){
 
 	USART_Init(USART2, &USART_InitDef);
 
-	USART_Cmd(USART2, ENABLE);								// dees kan voor problemen verozorge olla probleem bam bam baml
+	USART_Cmd(USART2, ENABLE);		
 }
 
 void USART2_init_interrupt(void){
 	USART_ITConfig(USART2,USART_IT_RXNE,ENABLE);
 
-	NVIC_InitTypeDef NVIC_InitDef;
+	NVIC_InitTypeDef NVIC_InitDef;				// Nested Vector Interrupt Controller
 
 	NVIC_InitDef.NVIC_IRQChannel = USART2_IRQn;		 // we want to configure the USART2 interrupts
-	NVIC_InitDef.NVIC_IRQChannelPreemptionPriority = 0;// this sets the priority group of the USART1 interrupts
+	NVIC_InitDef.NVIC_IRQChannelPreemptionPriority = 0;	 // this sets the priority group of the USART1 interrupts
 	NVIC_InitDef.NVIC_IRQChannelSubPriority = 0;		 // this sets the subpriority inside the group
-	NVIC_InitDef.NVIC_IRQChannelCmd = ENABLE;			 // the USART1 interrupts are globally enabled
-	NVIC_Init(&NVIC_InitDef);							 // the properties are passed to the NVIC_Init function which takes care of the low level stuff
+	NVIC_InitDef.NVIC_IRQChannelCmd = ENABLE;		 // the USART1 interrupts are globally enabled
+	NVIC_Init(&NVIC_InitDef);				// the properties are passed to the NVIC_Init function which takes care of the low level stuff
 }
 			
 
@@ -70,7 +69,7 @@ void USART2_init_interrupt(void){
 	    	uint16_t value = USART_ReceiveChar();
 	    	USART_SendString(&value);
 	        //Clear interrupt flag
-	        USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+	        USART_ClearITPendingBit(USART2, USART_IT_RXNE);
 	    }
 	}
 
@@ -81,5 +80,6 @@ int main(void) {
 	USART2_init_interrupt();
 
    while (1) {
+   	USART_SendString("Hello World!");
     }
 }
