@@ -83,3 +83,21 @@ int main(void) {
    	USART_SendString("Hello World!");
     }
 }
+
+
+/*
+extra info:
+
+To increase priority control in systems with interrupts, the NVIC supports priority grouping.
+This divides each interrupt priority register entry into two fields:
+an upper field that defines the group priority
+a lower field that defines a subpriority within the group.
+Only the group priority determines preemption of interrupt exceptions. 
+When the processor is executing an interrupt exception handler,
+another interrupt with the same group priority as the interrupt being handled does not preempt the handler,
+If multiple pending interrupts have the same group priority,
+the subpriority field determines the order in which they are processed.
+If multiple pending interrupts have the same group priority and subpriority, 
+the interrupt with the lowest IRQ number is processed first.
+
+*/
