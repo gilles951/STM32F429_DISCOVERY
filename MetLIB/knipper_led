@@ -1,0 +1,22 @@
+#include "Standaardstm32F4.h"
+
+int main(void) {
+	GPIO Rode_Led('G',14);
+	GPIO Groene_Led('G',13);
+
+	volatile int i;
+    while (1) {
+
+    	
+    	Rode_Led.WriteBit(true);
+    	Groene_Led.WriteBit(false);
+    	// Waste some time
+    	for (i = 0; i < 5000000; i++);
+
+    	// turn led off
+    	Rode_Led.WriteBit(false);		
+    	Groene_Led.WriteBit(true);
+    	// Waste some tome
+        for (i = 0; i < 5000000; i++);
+    }
+}
