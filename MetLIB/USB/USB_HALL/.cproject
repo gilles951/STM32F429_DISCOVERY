@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1275293804">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1275293804" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1275293804" name="Debug" parent="fr.ac6.managedbuild.config.gnu.cross.exe.debug" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot;; arm-none-eabi-size &quot;${BuildArtifactFileName}&quot;">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1275293804." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.1733965076" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.1292242241" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F429ZITx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.395022706" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F429I-DISCO" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1416243871" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.911102626" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.2062596223" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/USB_HALL}/Debug" id="fr.ac6.managedbuild.builder.gnu.cross.1536047742" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="fr.ac6.managedbuild.builder.gnu.cross">
+								<outputEntries>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
+									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
+								</outputEntries>
+							</builder>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1606160816" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.2046364582" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+								<option id="gnu.c.compiler.option.debugging.level.910126276" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.393706394" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.403068468" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F429ZITx"/>
+									<listOptionValue builtIn="false" value="STM32F429I_DISCO"/>
+									<listOptionValue builtIn="false" value="STM32F4"/>
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32F429xx"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1163853763" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1561020290" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.164661066" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.59659065" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.796897174" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.522232481" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1665793082" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F429ZITx"/>
+									<listOptionValue builtIn="false" value="STM32F429I_DISCO"/>
+									<listOptionValue builtIn="false" value="STM32F4"/>
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32F429xx"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.1265492060" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.321756831" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1555568807" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.77957872" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1011167309" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.274836377" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.1784104782" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.576990336" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1876586802" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1869274762" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1275293804.728835685" name="/" resourcePath="src">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.964455169" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug" unusedChildren="">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.1292242241.2081926974" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu.1292242241"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.395022706.622784560" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board.395022706"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1416243871.941107789" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu.1416243871"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.911102626.1080263352" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi.911102626"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1177927645" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1606160816">
+								<option id="gnu.c.compiler.option.include.paths.1955164517" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.876393930" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.906250864" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.751602996" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.164661066">
+								<option id="gnu.cpp.compiler.option.include.paths.754426178" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.210412568" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.1440057358" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.74526566" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1555568807"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.1417012770" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.77957872"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.689270137" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver.274836377"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.697954570" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.1784104782">
+								<option id="gnu.both.asm.option.include.paths.1322903694" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2106938791" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1357924814" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1275293804.617986386" name="/" resourcePath="Middlewares">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.1232736993" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug" unusedChildren="">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.1292242241.299040003" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu.1292242241"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.395022706.2062161339" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board.395022706"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1416243871.385069220" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu.1416243871"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.911102626.404642994" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi.911102626"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1223093445" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1606160816">
+								<option id="gnu.c.compiler.option.include.paths.108282208" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1828638710" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1563778942" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.849021044" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.164661066">
+								<option id="gnu.cpp.compiler.option.include.paths.1570332029" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.776812104" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.2071190498" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1505722215" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1555568807"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.1240444522" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.77957872"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.1009902563" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver.274836377"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.1668266110" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.1784104782">
+								<option id="gnu.both.asm.option.include.paths.6319186" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1467138904" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1240953617" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1275293804.1918056091" name="/" resourcePath="Middlewares/ST/STM32_USB_Device_Library/Class">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.220262465" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug" unusedChildren="">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.1292242241.106286392" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu.1292242241"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.395022706.1016733947" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board.395022706"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1416243871.1528473941" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu.1416243871"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.911102626.995703470" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi.911102626"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1018619285" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1606160816">
+								<option id="gnu.c.compiler.option.include.paths.186426151" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1636386796" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1914878648" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.628703773" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.164661066">
+								<option id="gnu.cpp.compiler.option.include.paths.1020590387" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.1859583521" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.695082897" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1169175681" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1555568807"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.758388806" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.77957872"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.554546842" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver.274836377"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.445468813" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.1784104782">
+								<option id="gnu.both.asm.option.include.paths.1884255635" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/core"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/CMSIS/device"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc/Legacy"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Device_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Middlewares/ST/STM32_USB_Host_Library/Core/Inc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire480272"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ampire640480"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/Common"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/cs43l22"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/exc7200"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ft6x06"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9325"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ili9341"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/l3gd20"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis302dl"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lis3dsh"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/lsm303dlhc"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/mfxstm32l152"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q128a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q256a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/n25q512a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/otm8009a"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ov2640"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s25fl512s"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/s5k5cag"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/st7735"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe1600"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/stmpe811"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/ts3510"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Components/wm8994"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Fonts"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/Log"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/Utilities/STM32F429I-Discovery"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.518367185" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1280728372" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="HAL_Driver"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares"/>
+						<entry excluding="Fonts" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Utilities"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="fr.ac6.managedbuild.config.gnu.cross.exe.release.161835591">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.161835591" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.release.161835591" name="Release" parent="fr.ac6.managedbuild.config.gnu.cross.exe.release" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot;; arm-none-eabi-size -B &quot;${BuildArtifactFileName}&quot;">
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.161835591." name="/" resourcePath="">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.1545935806" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.840092136" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F429ZITx" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.2081314759" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="STM32F429I-DISCO" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1123814698" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu" value="fr.ac6.managedbuild.option.gnu.cross.fpu.fpv4-sp-d16" valueType="enumerated"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.309146065" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.hard" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.1424944069" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/USB_HALL}/Release" id="fr.ac6.managedbuild.builder.gnu.cross.1173116060" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.380333325" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.32390811" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.c.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1313462364" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.1798252982" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire480272&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire640480&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/Common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/cs43l22&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/exc7200&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ft6x06&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9325&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9341&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/l3gd20&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis302dl&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis3dsh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lsm303dlhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/mfxstm32l152&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q128a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q256a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q512a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/otm8009a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ov2640&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s25fl512s&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s5k5cag&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/st7735&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe1600&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe811&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ts3510&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/wm8994&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Log&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/STM32F429I-Discovery&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.2053900815" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F429ZITx"/>
+									<listOptionValue builtIn="false" value="STM32F429I_DISCO"/>
+									<listOptionValue builtIn="false" value="STM32F4"/>
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32F429xx"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1043288930" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.134189297" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.112456074" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.905119343" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="fr.ac6.managedbuild.gnu.cpp.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.415598149" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.1101231842" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire480272&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire640480&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/Common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/cs43l22&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/exc7200&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ft6x06&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9325&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9341&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/l3gd20&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis302dl&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis3dsh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lsm303dlhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/mfxstm32l152&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q128a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q256a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q512a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/otm8009a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ov2640&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s25fl512s&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s5k5cag&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/st7735&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe1600&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe811&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ts3510&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/wm8994&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Log&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/STM32F429I-Discovery&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1468838486" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32F429ZITx"/>
+									<listOptionValue builtIn="false" value="STM32F429I_DISCO"/>
+									<listOptionValue builtIn="false" value="STM32F4"/>
+									<listOptionValue builtIn="false" value="STM32"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32F429xx"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.662894699" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.942045578" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1631366047" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.504073338" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1545525536" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.527411092" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.666735487" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+								<option id="gnu.both.asm.option.include.paths.1292262140" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire480272&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire640480&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/Common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/cs43l22&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/exc7200&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ft6x06&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9325&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9341&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/l3gd20&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis302dl&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis3dsh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lsm303dlhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/mfxstm32l152&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q128a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q256a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q512a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/otm8009a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ov2640&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s25fl512s&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s5k5cag&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/st7735&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe1600&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe811&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ts3510&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/wm8994&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Log&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/STM32F429I-Discovery&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.119870820" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1730160660" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.161835591.821057330" name="/" resourcePath="src">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.1631059938" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release" unusedChildren="">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.840092136.1137773855" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu.840092136"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.2081314759.1848520516" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board.2081314759"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1123814698.139172187" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu.1123814698"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.309146065.655129875" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi.309146065"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.121283341" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.380333325">
+								<option id="gnu.c.compiler.option.include.paths.383875772" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire480272&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire640480&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/Common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/cs43l22&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/exc7200&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ft6x06&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9325&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9341&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/l3gd20&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis302dl&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis3dsh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lsm303dlhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/mfxstm32l152&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q128a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q256a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q512a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/otm8009a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ov2640&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s25fl512s&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s5k5cag&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/st7735&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe1600&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe811&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ts3510&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/wm8994&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Log&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/STM32F429I-Discovery&quot;"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.2065048713" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.2102727324" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.1010581547" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.112456074">
+								<option id="gnu.cpp.compiler.option.include.paths.905170670" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire480272&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire640480&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/Common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/cs43l22&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/exc7200&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ft6x06&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9325&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9341&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/l3gd20&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis302dl&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis3dsh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lsm303dlhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/mfxstm32l152&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q128a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q256a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q512a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/otm8009a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ov2640&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s25fl512s&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s5k5cag&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/st7735&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe1600&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe811&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ts3510&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/wm8994&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Log&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/STM32F429I-Discovery&quot;"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.933593394" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.288541004" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1479618352" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1631366047"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.403528087" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.504073338"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.410910739" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver.527411092"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.1807380721" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.666735487">
+								<option id="gnu.both.asm.option.include.paths.1913241913" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire480272&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire640480&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/Common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/cs43l22&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/exc7200&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ft6x06&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9325&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9341&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/l3gd20&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis302dl&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis3dsh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lsm303dlhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/mfxstm32l152&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q128a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q256a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q512a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/otm8009a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ov2640&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s25fl512s&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s5k5cag&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/st7735&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe1600&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe811&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ts3510&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/wm8994&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Log&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/STM32F429I-Discovery&quot;"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.705399745" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1387467674" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.161835591.738836873" name="/" resourcePath="Middlewares">
+						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release.1882911341" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.release" unusedChildren="">
+							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.840092136.1440089541" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu.840092136"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.board.2081314759.2025272689" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board.2081314759"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.fpu.1123814698.180233533" name="Floating point hardware" superClass="fr.ac6.managedbuild.option.gnu.cross.fpu.1123814698"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.309146065.406871613" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi.309146065"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1276436418" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.380333325">
+								<option id="gnu.c.compiler.option.include.paths.1043460076" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire480272&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire640480&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/Common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/cs43l22&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/exc7200&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ft6x06&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9325&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9341&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/l3gd20&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis302dl&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis3dsh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lsm303dlhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/mfxstm32l152&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q128a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q256a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q512a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/otm8009a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ov2640&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s25fl512s&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s5k5cag&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/st7735&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe1600&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe811&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ts3510&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/wm8994&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Log&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/STM32F429I-Discovery&quot;"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1689954140" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.1059919531" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.755224840" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.112456074">
+								<option id="gnu.cpp.compiler.option.include.paths.1285204810" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire480272&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire640480&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/Common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/cs43l22&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/exc7200&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ft6x06&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9325&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9341&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/l3gd20&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis302dl&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis3dsh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lsm303dlhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/mfxstm32l152&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q128a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q256a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q512a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/otm8009a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ov2640&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s25fl512s&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s5k5cag&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/st7735&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe1600&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe811&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ts3510&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/wm8994&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Log&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/STM32F429I-Discovery&quot;"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.567489521" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.650857828" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
+							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1976253764" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1631366047"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.789620434" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.504073338"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.1363921781" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver.527411092"/>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.1844231782" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.666735487">
+								<option id="gnu.both.asm.option.include.paths.1810550187" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/device&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/AUDIO/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/HID/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/MTP/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Class/Template/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/ST/STM32_USB_Host_Library/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire480272&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ampire640480&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/Common&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/cs43l22&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/exc7200&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ft6x06&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9325&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ili9341&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/l3gd20&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis302dl&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lis3dsh&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/lsm303dlhc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/mfxstm32l152&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q128a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q256a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/n25q512a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/otm8009a&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ov2640&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s25fl512s&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/s5k5cag&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/st7735&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe1600&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/stmpe811&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/ts3510&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Components/wm8994&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Fonts&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/Log&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/STM32F429I-Discovery&quot;"/>
+									<listOptionValue builtIn="false" value="C:/Users/gybel_000/workspace/USB_HALL/src"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2003682167" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.1654816226" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="HAL_Driver"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares"/>
+						<entry excluding="Fonts" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Utilities"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="USB_HALL.fr.ac6.managedbuild.target.gnu.cross.exe.265770204" name="Executable" projectType="fr.ac6.managedbuild.target.gnu.cross.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1275293804;fr.ac6.managedbuild.config.gnu.cross.exe.debug.1275293804.;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.164661066;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.1265492060">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1275293804;fr.ac6.managedbuild.config.gnu.cross.exe.debug.1275293804.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1606160816;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1163853763">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.161835591;fr.ac6.managedbuild.config.gnu.cross.exe.release.161835591.;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.380333325;fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.1043288930">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="fr.ac6.managedbuild.config.gnu.cross.exe.release.161835591;fr.ac6.managedbuild.config.gnu.cross.exe.release.161835591.;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.112456074;fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.662894699">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+</cproject>
